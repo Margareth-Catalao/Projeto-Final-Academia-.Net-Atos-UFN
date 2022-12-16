@@ -40,9 +40,10 @@
             this.button_Cadastro_de_Livros.BackColor = System.Drawing.Color.Transparent;
             this.button_Cadastro_de_Livros.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_Cadastro_de_Livros.ForeColor = System.Drawing.Color.DarkRed;
-            this.button_Cadastro_de_Livros.Location = new System.Drawing.Point(34, 122);
+            this.button_Cadastro_de_Livros.Location = new System.Drawing.Point(49, 203);
+            this.button_Cadastro_de_Livros.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_Cadastro_de_Livros.Name = "button_Cadastro_de_Livros";
-            this.button_Cadastro_de_Livros.Size = new System.Drawing.Size(153, 37);
+            this.button_Cadastro_de_Livros.Size = new System.Drawing.Size(219, 62);
             this.button_Cadastro_de_Livros.TabIndex = 0;
             this.button_Cadastro_de_Livros.Text = "Livros";
             this.button_Cadastro_de_Livros.UseVisualStyleBackColor = false;
@@ -53,9 +54,10 @@
             this.button_Cadastro_de_Leitores.BackColor = System.Drawing.Color.Transparent;
             this.button_Cadastro_de_Leitores.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_Cadastro_de_Leitores.ForeColor = System.Drawing.Color.DarkRed;
-            this.button_Cadastro_de_Leitores.Location = new System.Drawing.Point(34, 190);
+            this.button_Cadastro_de_Leitores.Location = new System.Drawing.Point(49, 317);
+            this.button_Cadastro_de_Leitores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_Cadastro_de_Leitores.Name = "button_Cadastro_de_Leitores";
-            this.button_Cadastro_de_Leitores.Size = new System.Drawing.Size(153, 42);
+            this.button_Cadastro_de_Leitores.Size = new System.Drawing.Size(219, 70);
             this.button_Cadastro_de_Leitores.TabIndex = 1;
             this.button_Cadastro_de_Leitores.Text = "Leitores";
             this.button_Cadastro_de_Leitores.UseVisualStyleBackColor = false;
@@ -66,9 +68,10 @@
             this.button_Registro_de_Emprestimos.BackColor = System.Drawing.Color.Transparent;
             this.button_Registro_de_Emprestimos.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_Registro_de_Emprestimos.ForeColor = System.Drawing.Color.DarkRed;
-            this.button_Registro_de_Emprestimos.Location = new System.Drawing.Point(34, 259);
+            this.button_Registro_de_Emprestimos.Location = new System.Drawing.Point(49, 432);
+            this.button_Registro_de_Emprestimos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_Registro_de_Emprestimos.Name = "button_Registro_de_Emprestimos";
-            this.button_Registro_de_Emprestimos.Size = new System.Drawing.Size(153, 46);
+            this.button_Registro_de_Emprestimos.Size = new System.Drawing.Size(219, 77);
             this.button_Registro_de_Emprestimos.TabIndex = 2;
             this.button_Registro_de_Emprestimos.Text = "Empréstimos";
             this.button_Registro_de_Emprestimos.UseVisualStyleBackColor = false;
@@ -80,9 +83,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(34, 24);
+            this.label3.Location = new System.Drawing.Point(49, 40);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(359, 29);
+            this.label3.Size = new System.Drawing.Size(534, 44);
             this.label3.TabIndex = 3;
             this.label3.Text = "Seja bem-vindo a nossa biblioteca!";
             // 
@@ -92,26 +96,29 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(34, 68);
+            this.label4.Location = new System.Drawing.Point(49, 113);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 23);
+            this.label4.Size = new System.Drawing.Size(198, 36);
             this.label4.TabIndex = 4;
             this.label4.Text = "Menu Principal";
             // 
             // Menu_Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Projeto_Biblioteca_Emprestimo.Properties.Resources.download;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button_Registro_de_Emprestimos);
             this.Controls.Add(this.button_Cadastro_de_Leitores);
             this.Controls.Add(this.button_Cadastro_de_Livros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Menu_Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

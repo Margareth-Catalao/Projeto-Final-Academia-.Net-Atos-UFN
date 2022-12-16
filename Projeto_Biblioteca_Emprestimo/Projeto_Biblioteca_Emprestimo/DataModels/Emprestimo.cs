@@ -34,7 +34,7 @@ namespace Projeto_Biblioteca_Emprestimo.DataModels
             command.CommandType = CommandType.Text;
 
             command.CommandText = "insert into Emprestimos " +
-                "values (@IdLeitor,@IdLivro @DataInicio, @DataTermino, @Status);";
+                "values (@IdLeitor, @IdLivro, @DataInicio, @DataTermino, @Status);";
 
             command.Parameters.Add("@IdLeitor", SqlDbType.Int);
             command.Parameters.Add("@IdLivro", SqlDbType.Int);
@@ -42,7 +42,7 @@ namespace Projeto_Biblioteca_Emprestimo.DataModels
             command.Parameters.Add("@DataTermino", SqlDbType.DateTime);
             command.Parameters.Add("@Status", SqlDbType.VarChar);
             command.Parameters[0].Value = IdLeitor;
-            command.Parameters[1].Value = DataInicio;
+            command.Parameters[1].Value = IdLivro;
             command.Parameters[2].Value = DataInicio;
             command.Parameters[3].Value = DataTermino;
             command.Parameters[4].Value = Status;
@@ -108,16 +108,22 @@ namespace Projeto_Biblioteca_Emprestimo.DataModels
             cmd.Transaction = tran;
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "update Emprestimos set  IdLeitor= @IdLeitor, " +
-                "DataInicio = @DataInicio,  DataTermino= @DataTermino, Status=@Status where IdEmprestimo = @IdEmprestimo";
+                "IdLivro = @IdLivro, DataInicio = @DataInicio, DataTermino= @DataTermino, Status=@Status where IdEmprestimo = @IdEmprestimo";
+           
+            
             cmd.Parameters.Add("@IdLeitor", SqlDbType.Int);
+            cmd.Parameters.Add("@IdLivro", SqlDbType.Int);
             cmd.Parameters.Add("@DataInicio", SqlDbType.DateTime);
             cmd.Parameters.Add("@DataTermino", SqlDbType.DateTime);
             cmd.Parameters.Add("@Status", SqlDbType.VarChar);
-            cmd.Parameters[0].Value = IdLeitor;
-            cmd.Parameters[1].Value = DataInicio;
-            cmd.Parameters[2].Value = DataTermino;
-            cmd.Parameters[3].Value = Status;
+            cmd.Parameters.Add("@IdEmprestimo", SqlDbType.Int);
 
+            cmd.Parameters[0].Value = IdLeitor;
+            cmd.Parameters[1].Value = IdLivro;
+            cmd.Parameters[2].Value = DataInicio;
+            cmd.Parameters[3].Value = DataTermino;
+            cmd.Parameters[4].Value = Status;
+            cmd.Parameters[5].Value = IdEmprestimo;
 
             try
             {
@@ -154,9 +160,10 @@ namespace Projeto_Biblioteca_Emprestimo.DataModels
                     {
                         this.IdEmprestimo = reader.GetInt32(0);
                         IdLeitor = reader.GetInt32(1);
-                        DataInicio = reader.GetDateTime(2);
-                        DataTermino = reader.GetDateTime(3);
-                        Status = reader.GetString(4);
+                        IdLivro= reader.GetInt32(2);    
+                        DataInicio = reader.GetDateTime(3);
+                        DataTermino = reader.GetDateTime(4);
+                        Status = reader.GetString(5);
 
                         return this;
                     }

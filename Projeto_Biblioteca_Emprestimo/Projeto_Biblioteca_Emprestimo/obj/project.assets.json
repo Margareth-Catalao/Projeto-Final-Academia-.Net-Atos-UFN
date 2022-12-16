@@ -3645,11 +3645,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Academia_.Net_Atos_2022\\Desafios\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo.csproj",
+      "projectUniqueName": "C:\\Users\\Leo Ribas\\Desktop\\Projeto-Final-Academia-.Net-Atos-UFN\\Projeto-Final-Academia-.Net-Atos-UFN\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo.csproj",
       "projectName": "Projeto_Biblioteca_Emprestimo",
-      "projectPath": "D:\\Academia_.Net_Atos_2022\\Desafios\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo.csproj",
+      "projectPath": "C:\\Users\\Leo Ribas\\Desktop\\Projeto-Final-Academia-.Net-Atos-UFN\\Projeto-Final-Academia-.Net-Atos-UFN\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo.csproj",
       "packagesPath": "C:\\Users\\Leo Ribas\\.nuget\\packages\\",
-      "outputPath": "D:\\Academia_.Net_Atos_2022\\Desafios\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo\\obj\\",
+      "outputPath": "C:\\Users\\Leo Ribas\\Desktop\\Projeto-Final-Academia-.Net-Atos-UFN\\Projeto-Final-Academia-.Net-Atos-UFN\\Projeto_Biblioteca_Emprestimo\\Projeto_Biblioteca_Emprestimo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

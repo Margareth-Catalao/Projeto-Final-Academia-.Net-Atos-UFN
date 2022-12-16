@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button_CadastrarLivro = new System.Windows.Forms.Button();
             this.textBox_GeneroCd = new System.Windows.Forms.TextBox();
@@ -99,7 +100,7 @@
             this.groupBox2.Size = new System.Drawing.Size(400, 325);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cadastar Livro";
+            this.groupBox2.Text = "Cadastrar Livro";
             // 
             // button_CadastrarLivro
             // 
@@ -343,22 +344,30 @@
             this.dataGridView1_Livro.AllowUserToAddRows = false;
             this.dataGridView1_Livro.AllowUserToDeleteRows = false;
             this.dataGridView1_Livro.BackgroundColor = System.Drawing.Color.LemonChiffon;
-            this.dataGridView1_Livro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1_Livro.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1_Livro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1_Livro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1_Livro.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1_Livro.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridView1_Livro.Location = new System.Drawing.Point(489, 23);
             this.dataGridView1_Livro.Name = "dataGridView1_Livro";
             this.dataGridView1_Livro.ReadOnly = true;
             this.dataGridView1_Livro.RowHeadersWidth = 62;
             this.dataGridView1_Livro.RowTemplate.Height = 33;
-            this.dataGridView1_Livro.Size = new System.Drawing.Size(713, 299);
+            this.dataGridView1_Livro.Size = new System.Drawing.Size(713, 307);
             this.dataGridView1_Livro.TabIndex = 5;
             // 
             // groupBox1
@@ -373,9 +382,9 @@
             this.groupBox1.Controls.Add(this.IdLivro);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(513, 365);
+            this.groupBox1.Location = new System.Drawing.Point(489, 365);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(402, 339);
+            this.groupBox1.Size = new System.Drawing.Size(358, 339);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consultar Livro";
@@ -454,9 +463,9 @@
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox4.ForeColor = System.Drawing.Color.Black;
-            this.groupBox4.Location = new System.Drawing.Point(937, 365);
+            this.groupBox4.Location = new System.Drawing.Point(888, 365);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(265, 159);
+            this.groupBox4.Size = new System.Drawing.Size(292, 159);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Excluir Livro";
@@ -493,9 +502,9 @@
             this.groupBox5.BackColor = System.Drawing.Color.LemonChiffon;
             this.groupBox5.Controls.Add(this.button_VoltarMenu);
             this.groupBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox5.Location = new System.Drawing.Point(937, 544);
+            this.groupBox5.Location = new System.Drawing.Point(888, 544);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(265, 160);
+            this.groupBox5.Size = new System.Drawing.Size(292, 160);
             this.groupBox5.TabIndex = 8;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Voltar ao Menu Principal";
@@ -528,6 +537,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Cadastro_de_Livros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro_de_Livros";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

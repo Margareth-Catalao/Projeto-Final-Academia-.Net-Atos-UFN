@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button_CadastrarLeitor = new System.Windows.Forms.Button();
             this.textBox_TelefoneCd = new System.Windows.Forms.TextBox();
@@ -108,29 +109,29 @@
             // 
             this.textBox_TelefoneCd.Location = new System.Drawing.Point(134, 179);
             this.textBox_TelefoneCd.Name = "textBox_TelefoneCd";
-            this.textBox_TelefoneCd.Size = new System.Drawing.Size(239, 27);
+            this.textBox_TelefoneCd.Size = new System.Drawing.Size(239, 37);
             this.textBox_TelefoneCd.TabIndex = 14;
             // 
             // textBox_EnderecoCd
             // 
             this.textBox_EnderecoCd.Location = new System.Drawing.Point(134, 93);
             this.textBox_EnderecoCd.Name = "textBox_EnderecoCd";
-            this.textBox_EnderecoCd.Size = new System.Drawing.Size(239, 27);
+            this.textBox_EnderecoCd.Size = new System.Drawing.Size(239, 37);
             this.textBox_EnderecoCd.TabIndex = 18;
             // 
             // textBox_NomeLeitorCd
             // 
             this.textBox_NomeLeitorCd.Location = new System.Drawing.Point(134, 50);
             this.textBox_NomeLeitorCd.Name = "textBox_NomeLeitorCd";
-            this.textBox_NomeLeitorCd.Size = new System.Drawing.Size(239, 27);
+            this.textBox_NomeLeitorCd.Size = new System.Drawing.Size(239, 37);
             this.textBox_NomeLeitorCd.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(39, 101);
+            this.label7.Location = new System.Drawing.Point(14, 93);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 19);
+            this.label7.Size = new System.Drawing.Size(114, 29);
             this.label7.TabIndex = 15;
             this.label7.Text = "Endereço:";
             // 
@@ -138,33 +139,33 @@
             // 
             this.textBox1_Cpf_Cd.Location = new System.Drawing.Point(134, 136);
             this.textBox1_Cpf_Cd.Name = "textBox1_Cpf_Cd";
-            this.textBox1_Cpf_Cd.Size = new System.Drawing.Size(239, 27);
+            this.textBox1_Cpf_Cd.Size = new System.Drawing.Size(239, 37);
             this.textBox1_Cpf_Cd.TabIndex = 12;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(43, 179);
+            this.label8.Location = new System.Drawing.Point(22, 179);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 19);
+            this.label8.Size = new System.Drawing.Size(106, 29);
             this.label8.TabIndex = 11;
             this.label8.Text = "Telefone:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(79, 139);
+            this.label9.Location = new System.Drawing.Point(74, 139);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 19);
+            this.label9.Size = new System.Drawing.Size(54, 29);
             this.label9.TabIndex = 10;
             this.label9.Text = "Cpf:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(60, 53);
+            this.label10.Location = new System.Drawing.Point(47, 50);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 19);
+            this.label10.Size = new System.Drawing.Size(81, 29);
             this.label10.TabIndex = 13;
             this.label10.Text = "Nome:";
             // 
@@ -195,15 +196,15 @@
             // 
             this.textBox_IdLeitorEd.Location = new System.Drawing.Point(128, 54);
             this.textBox_IdLeitorEd.Name = "textBox_IdLeitorEd";
-            this.textBox_IdLeitorEd.Size = new System.Drawing.Size(239, 27);
+            this.textBox_IdLeitorEd.Size = new System.Drawing.Size(239, 37);
             this.textBox_IdLeitorEd.TabIndex = 10;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 57);
+            this.label11.Location = new System.Drawing.Point(28, 57);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 19);
+            this.label11.Size = new System.Drawing.Size(97, 29);
             this.label11.TabIndex = 9;
             this.label11.Text = "IdLeitor:";
             // 
@@ -221,36 +222,36 @@
             // 
             this.textBox_Telefone_Ed.Location = new System.Drawing.Point(128, 226);
             this.textBox_Telefone_Ed.Name = "textBox_Telefone_Ed";
-            this.textBox_Telefone_Ed.Size = new System.Drawing.Size(239, 27);
+            this.textBox_Telefone_Ed.Size = new System.Drawing.Size(239, 37);
             this.textBox_Telefone_Ed.TabIndex = 7;
             // 
             // textBox_Cpf_Ed
             // 
             this.textBox_Cpf_Ed.Location = new System.Drawing.Point(128, 183);
             this.textBox_Cpf_Ed.Name = "textBox_Cpf_Ed";
-            this.textBox_Cpf_Ed.Size = new System.Drawing.Size(239, 27);
+            this.textBox_Cpf_Ed.Size = new System.Drawing.Size(239, 37);
             this.textBox_Cpf_Ed.TabIndex = 6;
             // 
             // textBox_EnderecoLeitorEd
             // 
             this.textBox_EnderecoLeitorEd.Location = new System.Drawing.Point(128, 140);
             this.textBox_EnderecoLeitorEd.Name = "textBox_EnderecoLeitorEd";
-            this.textBox_EnderecoLeitorEd.Size = new System.Drawing.Size(239, 27);
+            this.textBox_EnderecoLeitorEd.Size = new System.Drawing.Size(239, 37);
             this.textBox_EnderecoLeitorEd.TabIndex = 5;
             // 
             // textBoxNomeLeitorEd
             // 
             this.textBoxNomeLeitorEd.Location = new System.Drawing.Point(128, 97);
             this.textBoxNomeLeitorEd.Name = "textBoxNomeLeitorEd";
-            this.textBoxNomeLeitorEd.Size = new System.Drawing.Size(239, 27);
+            this.textBoxNomeLeitorEd.Size = new System.Drawing.Size(239, 37);
             this.textBoxNomeLeitorEd.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 230);
+            this.label4.Location = new System.Drawing.Point(16, 234);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 19);
+            this.label4.Size = new System.Drawing.Size(106, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefone:";
             // 
@@ -259,37 +260,39 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(66, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 19);
+            this.label3.Size = new System.Drawing.Size(54, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Cpf:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 140);
+            this.label2.Location = new System.Drawing.Point(8, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(114, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Endereço:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 100);
+            this.label1.Location = new System.Drawing.Point(44, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.Size = new System.Drawing.Size(81, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
             // 
             // dataGridView_Leitor
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridView_Leitor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Leitor.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_Leitor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Leitor.Location = new System.Drawing.Point(495, 24);
+            this.dataGridView_Leitor.Location = new System.Drawing.Point(459, 24);
             this.dataGridView_Leitor.Name = "dataGridView_Leitor";
             this.dataGridView_Leitor.RowHeadersWidth = 62;
             this.dataGridView_Leitor.RowTemplate.Height = 33;
-            this.dataGridView_Leitor.Size = new System.Drawing.Size(710, 294);
+            this.dataGridView_Leitor.Size = new System.Drawing.Size(746, 294);
             this.dataGridView_Leitor.TabIndex = 5;
             // 
             // groupBox3
@@ -315,7 +318,7 @@
             // 
             this.textBox_NomeConsultaLeitor.Location = new System.Drawing.Point(22, 66);
             this.textBox_NomeConsultaLeitor.Name = "textBox_NomeConsultaLeitor";
-            this.textBox_NomeConsultaLeitor.Size = new System.Drawing.Size(276, 27);
+            this.textBox_NomeConsultaLeitor.Size = new System.Drawing.Size(276, 37);
             this.textBox_NomeConsultaLeitor.TabIndex = 9;
             // 
             // label12
@@ -323,7 +326,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(22, 33);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 19);
+            this.label12.Size = new System.Drawing.Size(81, 29);
             this.label12.TabIndex = 8;
             this.label12.Text = "Nome:";
             // 
@@ -331,7 +334,7 @@
             // 
             this.button_NomeConsultaLeitor.Location = new System.Drawing.Point(22, 114);
             this.button_NomeConsultaLeitor.Name = "button_NomeConsultaLeitor";
-            this.button_NomeConsultaLeitor.Size = new System.Drawing.Size(276, 34);
+            this.button_NomeConsultaLeitor.Size = new System.Drawing.Size(276, 38);
             this.button_NomeConsultaLeitor.TabIndex = 7;
             this.button_NomeConsultaLeitor.Text = "Consultar";
             this.button_NomeConsultaLeitor.UseVisualStyleBackColor = true;
@@ -351,7 +354,7 @@
             // 
             this.button_ConsultaIdLeitor.Location = new System.Drawing.Point(22, 230);
             this.button_ConsultaIdLeitor.Name = "button_ConsultaIdLeitor";
-            this.button_ConsultaIdLeitor.Size = new System.Drawing.Size(276, 34);
+            this.button_ConsultaIdLeitor.Size = new System.Drawing.Size(276, 45);
             this.button_ConsultaIdLeitor.TabIndex = 5;
             this.button_ConsultaIdLeitor.Text = "Consulta";
             this.button_ConsultaIdLeitor.UseVisualStyleBackColor = true;
@@ -361,7 +364,7 @@
             // 
             this.textBox_IdLeitorConsulta.Location = new System.Drawing.Point(22, 187);
             this.textBox_IdLeitorConsulta.Name = "textBox_IdLeitorConsulta";
-            this.textBox_IdLeitorConsulta.Size = new System.Drawing.Size(276, 27);
+            this.textBox_IdLeitorConsulta.Size = new System.Drawing.Size(276, 37);
             this.textBox_IdLeitorConsulta.TabIndex = 3;
             // 
             // label6
@@ -369,7 +372,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(22, 155);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 19);
+            this.label6.Size = new System.Drawing.Size(97, 29);
             this.label6.TabIndex = 1;
             this.label6.Text = "IdLeitor:";
             // 
@@ -392,7 +395,7 @@
             // 
             this.button_IdLeitorEx.Location = new System.Drawing.Point(41, 114);
             this.button_IdLeitorEx.Name = "button_IdLeitorEx";
-            this.button_IdLeitorEx.Size = new System.Drawing.Size(253, 34);
+            this.button_IdLeitorEx.Size = new System.Drawing.Size(253, 38);
             this.button_IdLeitorEx.TabIndex = 2;
             this.button_IdLeitorEx.Text = "Excluir";
             this.button_IdLeitorEx.UseVisualStyleBackColor = true;
@@ -402,7 +405,7 @@
             // 
             this.textBox_IdLeitorEx.Location = new System.Drawing.Point(41, 65);
             this.textBox_IdLeitorEx.Name = "textBox_IdLeitorEx";
-            this.textBox_IdLeitorEx.Size = new System.Drawing.Size(244, 27);
+            this.textBox_IdLeitorEx.Size = new System.Drawing.Size(244, 37);
             this.textBox_IdLeitorEx.TabIndex = 1;
             // 
             // label5
@@ -410,7 +413,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(41, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(97, 29);
             this.label5.TabIndex = 0;
             this.label5.Text = "IdLeitor:";
             // 
@@ -438,7 +441,7 @@
             // 
             // Cadastro_de_Leitores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Projeto_Biblioteca_Emprestimo.Properties.Resources.LivroForm;
             this.ClientSize = new System.Drawing.Size(1257, 749);
@@ -452,6 +455,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Cadastro_de_Leitores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro_de_Leitores";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox_IdLivroEmprestimoCd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +42,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox_idEmprestimoEd = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox_IdLivroEmprestimoEd = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox_StatusEmprestimoEd = new System.Windows.Forms.TextBox();
             this.button_EditarEmprestimo = new System.Windows.Forms.Button();
@@ -56,6 +61,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridVie_Emprestimo = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button_ConsultarTodosEmprestimos = new System.Windows.Forms.Button();
             this.button_ConsultaEmprestimoId = new System.Windows.Forms.Button();
             this.textBox_IdEmprestimoConsulta = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -105,15 +112,15 @@
             // 
             this.textBox_IdLivroEmprestimoCd.Location = new System.Drawing.Point(208, 92);
             this.textBox_IdLivroEmprestimoCd.Name = "textBox_IdLivroEmprestimoCd";
-            this.textBox_IdLivroEmprestimoCd.Size = new System.Drawing.Size(187, 27);
+            this.textBox_IdLivroEmprestimoCd.Size = new System.Drawing.Size(187, 37);
             this.textBox_IdLivroEmprestimoCd.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 92);
+            this.label1.Location = new System.Drawing.Point(108, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 19);
+            this.label1.Size = new System.Drawing.Size(88, 29);
             this.label1.TabIndex = 11;
             this.label1.Text = "IdLivro:";
             // 
@@ -123,7 +130,7 @@
             this.dateTimePicker_FimEmprestimo.Location = new System.Drawing.Point(208, 186);
             this.dateTimePicker_FimEmprestimo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker_FimEmprestimo.Name = "dateTimePicker_FimEmprestimo";
-            this.dateTimePicker_FimEmprestimo.Size = new System.Drawing.Size(187, 27);
+            this.dateTimePicker_FimEmprestimo.Size = new System.Drawing.Size(187, 37);
             this.dateTimePicker_FimEmprestimo.TabIndex = 10;
             // 
             // dateTimePicker_InicioEmpretimo
@@ -132,16 +139,16 @@
             this.dateTimePicker_InicioEmpretimo.Location = new System.Drawing.Point(210, 135);
             this.dateTimePicker_InicioEmpretimo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker_InicioEmpretimo.Name = "dateTimePicker_InicioEmpretimo";
-            this.dateTimePicker_InicioEmpretimo.Size = new System.Drawing.Size(187, 27);
+            this.dateTimePicker_InicioEmpretimo.Size = new System.Drawing.Size(187, 37);
             this.dateTimePicker_InicioEmpretimo.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 229);
+            this.label5.Location = new System.Drawing.Point(112, 237);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 19);
+            this.label5.Size = new System.Drawing.Size(82, 29);
             this.label5.TabIndex = 8;
             this.label5.Text = "Status:";
             // 
@@ -150,7 +157,7 @@
             this.textBox_StatusEmprestimo.Location = new System.Drawing.Point(208, 229);
             this.textBox_StatusEmprestimo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox_StatusEmprestimo.Name = "textBox_StatusEmprestimo";
-            this.textBox_StatusEmprestimo.Size = new System.Drawing.Size(187, 27);
+            this.textBox_StatusEmprestimo.Size = new System.Drawing.Size(187, 37);
             this.textBox_StatusEmprestimo.TabIndex = 7;
             // 
             // button_GravarEmprestimo
@@ -169,7 +176,7 @@
             this.textBox_IdLeitorEmprestimoCd.Location = new System.Drawing.Point(210, 46);
             this.textBox_IdLeitorEmprestimoCd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox_IdLeitorEmprestimoCd.Name = "textBox_IdLeitorEmprestimoCd";
-            this.textBox_IdLeitorEmprestimoCd.Size = new System.Drawing.Size(187, 27);
+            this.textBox_IdLeitorEmprestimoCd.Size = new System.Drawing.Size(187, 37);
             this.textBox_IdLeitorEmprestimoCd.TabIndex = 5;
             // 
             // label4
@@ -178,33 +185,37 @@
             this.label4.Location = new System.Drawing.Point(15, 186);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 19);
+            this.label4.Size = new System.Drawing.Size(190, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Data de Termino: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 143);
+            this.label3.Location = new System.Drawing.Point(40, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 19);
+            this.label3.Size = new System.Drawing.Size(156, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Data de Inicio:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 46);
+            this.label2.Location = new System.Drawing.Point(102, 54);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 19);
+            this.label2.Size = new System.Drawing.Size(97, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "IdLeitor:";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.textBox_idEmprestimoEd);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.textBox_IdLivroEmprestimoEd);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.textBox_StatusEmprestimoEd);
             this.groupBox2.Controls.Add(this.button_EditarEmprestimo);
@@ -224,32 +235,64 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox2.Size = new System.Drawing.Size(412, 313);
+            this.groupBox2.Size = new System.Drawing.Size(412, 350);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Editar Emprestimo";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(34, 251);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(162, 29);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "IdEmprestimo:";
+            // 
+            // textBox_idEmprestimoEd
+            // 
+            this.textBox_idEmprestimoEd.Location = new System.Drawing.Point(206, 255);
+            this.textBox_idEmprestimoEd.Name = "textBox_idEmprestimoEd";
+            this.textBox_idEmprestimoEd.Size = new System.Drawing.Size(187, 37);
+            this.textBox_idEmprestimoEd.TabIndex = 25;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(102, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 29);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "IdLivro:";
+            // 
+            // textBox_IdLivroEmprestimoEd
+            // 
+            this.textBox_IdLivroEmprestimoEd.Location = new System.Drawing.Point(208, 79);
+            this.textBox_IdLivroEmprestimoEd.Name = "textBox_IdLivroEmprestimoEd";
+            this.textBox_IdLivroEmprestimoEd.Size = new System.Drawing.Size(187, 37);
+            this.textBox_IdLivroEmprestimoEd.TabIndex = 23;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(108, 198);
+            this.label12.Location = new System.Drawing.Point(108, 213);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 19);
+            this.label12.Size = new System.Drawing.Size(82, 29);
             this.label12.TabIndex = 22;
             this.label12.Text = "Status:";
             // 
             // textBox_StatusEmprestimoEd
             // 
-            this.textBox_StatusEmprestimoEd.Location = new System.Drawing.Point(208, 198);
+            this.textBox_StatusEmprestimoEd.Location = new System.Drawing.Point(206, 212);
             this.textBox_StatusEmprestimoEd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox_StatusEmprestimoEd.Name = "textBox_StatusEmprestimoEd";
-            this.textBox_StatusEmprestimoEd.Size = new System.Drawing.Size(185, 27);
+            this.textBox_StatusEmprestimoEd.Size = new System.Drawing.Size(185, 37);
             this.textBox_StatusEmprestimoEd.TabIndex = 21;
             // 
             // button_EditarEmprestimo
             // 
-            this.button_EditarEmprestimo.Location = new System.Drawing.Point(208, 241);
+            this.button_EditarEmprestimo.Location = new System.Drawing.Point(208, 298);
             this.button_EditarEmprestimo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button_EditarEmprestimo.Name = "button_EditarEmprestimo";
             this.button_EditarEmprestimo.Size = new System.Drawing.Size(185, 46);
@@ -261,38 +304,38 @@
             // dateTimePicker5_FimEmprestimoEd
             // 
             this.dateTimePicker5_FimEmprestimoEd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5_FimEmprestimoEd.Location = new System.Drawing.Point(208, 155);
+            this.dateTimePicker5_FimEmprestimoEd.Location = new System.Drawing.Point(206, 167);
             this.dateTimePicker5_FimEmprestimoEd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker5_FimEmprestimoEd.Name = "dateTimePicker5_FimEmprestimoEd";
-            this.dateTimePicker5_FimEmprestimoEd.Size = new System.Drawing.Size(185, 27);
+            this.dateTimePicker5_FimEmprestimoEd.Size = new System.Drawing.Size(185, 37);
             this.dateTimePicker5_FimEmprestimoEd.TabIndex = 19;
             // 
             // dateTimePicker_InicioEmprestimoEd
             // 
             this.dateTimePicker_InicioEmprestimoEd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_InicioEmprestimoEd.Location = new System.Drawing.Point(210, 112);
+            this.dateTimePicker_InicioEmprestimoEd.Location = new System.Drawing.Point(208, 124);
             this.dateTimePicker_InicioEmprestimoEd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker_InicioEmprestimoEd.Name = "dateTimePicker_InicioEmprestimoEd";
-            this.dateTimePicker_InicioEmprestimoEd.Size = new System.Drawing.Size(185, 27);
+            this.dateTimePicker_InicioEmprestimoEd.Size = new System.Drawing.Size(185, 37);
             this.dateTimePicker_InicioEmprestimoEd.TabIndex = 18;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 155);
+            this.label8.Location = new System.Drawing.Point(4, 167);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 19);
+            this.label8.Size = new System.Drawing.Size(190, 29);
             this.label8.TabIndex = 17;
             this.label8.Text = "Data de Termino: ";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(49, 112);
+            this.label9.Location = new System.Drawing.Point(34, 122);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 19);
+            this.label9.Size = new System.Drawing.Size(156, 29);
             this.label9.TabIndex = 16;
             this.label9.Text = "Data de Inicio:";
             // 
@@ -302,7 +345,7 @@
             this.dateTimePicker3.Location = new System.Drawing.Point(181, -91);
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(185, 27);
+            this.dateTimePicker3.Size = new System.Drawing.Size(185, 37);
             this.dateTimePicker3.TabIndex = 15;
             // 
             // dateTimePicker4
@@ -311,7 +354,7 @@
             this.dateTimePicker4.Location = new System.Drawing.Point(181, -134);
             this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(185, 27);
+            this.dateTimePicker4.Size = new System.Drawing.Size(185, 37);
             this.dateTimePicker4.TabIndex = 14;
             // 
             // label10
@@ -320,7 +363,7 @@
             this.label10.Location = new System.Drawing.Point(-16, -91);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 19);
+            this.label10.Size = new System.Drawing.Size(190, 29);
             this.label10.TabIndex = 13;
             this.label10.Text = "Data de Termino: ";
             // 
@@ -330,30 +373,32 @@
             this.label11.Location = new System.Drawing.Point(18, -128);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 19);
+            this.label11.Size = new System.Drawing.Size(156, 29);
             this.label11.TabIndex = 12;
             this.label11.Text = "Data de Inicio:";
             // 
             // textBox_IdLeitorEd
             // 
-            this.textBox_IdLeitorEd.Location = new System.Drawing.Point(210, 63);
+            this.textBox_IdLeitorEd.Location = new System.Drawing.Point(206, 36);
             this.textBox_IdLeitorEd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox_IdLeitorEd.Name = "textBox_IdLeitorEd";
-            this.textBox_IdLeitorEd.Size = new System.Drawing.Size(185, 27);
+            this.textBox_IdLeitorEd.Size = new System.Drawing.Size(185, 37);
             this.textBox_IdLeitorEd.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(108, 66);
+            this.label6.Location = new System.Drawing.Point(93, 45);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 19);
+            this.label6.Size = new System.Drawing.Size(97, 29);
             this.label6.TabIndex = 7;
             this.label6.Text = "IdLeitor:";
             // 
             // dataGridVie_Emprestimo
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataGridVie_Emprestimo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridVie_Emprestimo.BackgroundColor = System.Drawing.Color.White;
             this.dataGridVie_Emprestimo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridVie_Emprestimo.Location = new System.Drawing.Point(499, 47);
@@ -367,6 +412,8 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.button_ConsultarTodosEmprestimos);
             this.groupBox3.Controls.Add(this.button_ConsultaEmprestimoId);
             this.groupBox3.Controls.Add(this.textBox_IdEmprestimoConsulta);
             this.groupBox3.Controls.Add(this.label13);
@@ -376,14 +423,33 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox3.Size = new System.Drawing.Size(321, 192);
+            this.groupBox3.Size = new System.Drawing.Size(338, 237);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Consultar Emprestimos/Status";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(50, 33);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(162, 29);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "IdEmprestimo:";
+            // 
+            // button_ConsultarTodosEmprestimos
+            // 
+            this.button_ConsultarTodosEmprestimos.Location = new System.Drawing.Point(49, 171);
+            this.button_ConsultarTodosEmprestimos.Name = "button_ConsultarTodosEmprestimos";
+            this.button_ConsultarTodosEmprestimos.Size = new System.Drawing.Size(244, 46);
+            this.button_ConsultarTodosEmprestimos.TabIndex = 3;
+            this.button_ConsultarTodosEmprestimos.Text = "Consultar Todos";
+            this.button_ConsultarTodosEmprestimos.UseVisualStyleBackColor = true;
+            this.button_ConsultarTodosEmprestimos.Click += new System.EventHandler(this.button_ConsultarTodosEmprestimos_Click);
+            // 
             // button_ConsultaEmprestimoId
             // 
-            this.button_ConsultaEmprestimoId.Location = new System.Drawing.Point(46, 115);
+            this.button_ConsultaEmprestimoId.Location = new System.Drawing.Point(49, 110);
             this.button_ConsultaEmprestimoId.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button_ConsultaEmprestimoId.Name = "button_ConsultaEmprestimoId";
             this.button_ConsultaEmprestimoId.Size = new System.Drawing.Size(244, 44);
@@ -394,10 +460,10 @@
             // 
             // textBox_IdEmprestimoConsulta
             // 
-            this.textBox_IdEmprestimoConsulta.Location = new System.Drawing.Point(46, 72);
+            this.textBox_IdEmprestimoConsulta.Location = new System.Drawing.Point(49, 67);
             this.textBox_IdEmprestimoConsulta.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox_IdEmprestimoConsulta.Name = "textBox_IdEmprestimoConsulta";
-            this.textBox_IdEmprestimoConsulta.Size = new System.Drawing.Size(244, 27);
+            this.textBox_IdEmprestimoConsulta.Size = new System.Drawing.Size(244, 37);
             this.textBox_IdEmprestimoConsulta.TabIndex = 1;
             // 
             // label13
@@ -406,9 +472,8 @@
             this.label13.Location = new System.Drawing.Point(45, 33);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 19);
+            this.label13.Size = new System.Drawing.Size(0, 29);
             this.label13.TabIndex = 0;
-            this.label13.Text = "IdEmprestimo:";
             // 
             // groupBox4
             // 
@@ -445,7 +510,7 @@
             this.textBox_ExcluirId.Location = new System.Drawing.Point(52, 72);
             this.textBox_ExcluirId.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox_ExcluirId.Name = "textBox_ExcluirId";
-            this.textBox_ExcluirId.Size = new System.Drawing.Size(189, 27);
+            this.textBox_ExcluirId.Size = new System.Drawing.Size(189, 37);
             this.textBox_ExcluirId.TabIndex = 5;
             // 
             // label18
@@ -454,7 +519,7 @@
             this.label18.Location = new System.Drawing.Point(21, 41);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(0, 19);
+            this.label18.Size = new System.Drawing.Size(0, 29);
             this.label18.TabIndex = 4;
             // 
             // label17
@@ -463,7 +528,7 @@
             this.label17.Location = new System.Drawing.Point(51, 41);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(0, 19);
+            this.label17.Size = new System.Drawing.Size(0, 29);
             this.label17.TabIndex = 3;
             // 
             // label16
@@ -471,10 +536,10 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(48, 50);
+            this.label16.Location = new System.Drawing.Point(52, 40);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(107, 19);
+            this.label16.Size = new System.Drawing.Size(162, 29);
             this.label16.TabIndex = 2;
             this.label16.Text = "IdEmprestimo:";
             // 
@@ -505,20 +570,21 @@
             // 
             // Registro_de_Emprestimos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Projeto_Biblioteca_Emprestimo.Properties.Resources.images__2_;
-            this.ClientSize = new System.Drawing.Size(1257, 749);
+            this.ClientSize = new System.Drawing.Size(1257, 778);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridVie_Emprestimo);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Registro_de_Emprestimos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro_de_Emorestimo";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -575,5 +641,11 @@
         private Label label16;
         private GroupBox groupBox5;
         private Button button_VoltarMenu;
+        private Button button_ConsultarTodosEmprestimos;
+        private Label label7;
+        private TextBox textBox_IdLivroEmprestimoEd;
+        private Label label14;
+        private TextBox textBox_idEmprestimoEd;
+        private Label label15;
     }
 }

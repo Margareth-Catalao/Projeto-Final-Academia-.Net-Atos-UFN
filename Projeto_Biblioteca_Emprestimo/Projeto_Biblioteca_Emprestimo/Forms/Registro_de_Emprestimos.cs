@@ -24,6 +24,7 @@ namespace Projeto_Biblioteca_Emprestimo.Forms
         {
             menuPrincipal = menu;
             InitializeComponent();
+            ExibirTd();
         }
 
         private void button_VoltarMenu_Click(object sender, EventArgs e)
@@ -57,8 +58,10 @@ namespace Projeto_Biblioteca_Emprestimo.Forms
         private void button_EditarEmprestimo_Click(object sender, EventArgs e)
         {
             Emprestimo emprestimo = new Emprestimo();
+
+            emprestimo.IdEmprestimo = int.Parse(textBox_IdLivroEmprestimoEd.Text);
             emprestimo.IdLeitor = int.Parse(textBox_IdLeitorEd.Text);
-            emprestimo.IdLivro = int.Parse(textBox_IdLivroEmprestimoCd.Text);
+            emprestimo.IdLivro = int.Parse(textBox_IdLivroEmprestimoEd.Text);
             emprestimo.DataInicio = DateTime.Parse(dateTimePicker_InicioEmprestimoEd.Text);
             emprestimo.DataTermino = DateTime.Parse(dateTimePicker5_FimEmprestimoEd.Text);
             emprestimo.Status = textBox_StatusEmprestimoEd.Text;
@@ -81,12 +84,15 @@ namespace Projeto_Biblioteca_Emprestimo.Forms
             emprestimo.ConsultaEmprestimo(int.Parse(textBox_IdEmprestimoConsulta.Text));
             MessageBox.Show(emprestimo.Status);
         }
-
+        private void button_ConsultarTodosEmprestimos_Click(object sender, EventArgs e)
+        {
+            ExibirTd();
+        }
         private void ExibirTd()
         {
             Contexto contexto = new Contexto();
 
-            string sql = "select * from Emprestimo";
+            string sql = "select * from Emprestimos";
 
             DataTable dt = new DataTable();
 
